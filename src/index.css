@@ -33,6 +33,7 @@ html, body, #root {
   width: 2px;
   height: 90%;
   z-index: -1;
+  background-color: rgb(206, 204, 204)
 }
 
 ul.relative.z-9 {
@@ -61,7 +62,7 @@ body {
 }
 
 .ml-64 {
-  margin-left: 16rem; /* 64px */
+  margin-left: 16rem; 
 }
 
 .ml-0 {
@@ -70,6 +71,6 @@ body {
 
 @media (min-width: 768px) {
   .md\:ml-64 {
-    margin-left: 16rem; /* 64px */
+    margin-left: 16rem;
   }
 }

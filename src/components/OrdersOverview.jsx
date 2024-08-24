@@ -11,7 +11,7 @@ const OrdersOverview = () => {
     },
     {
       id: 2,
-      icon: <FaClipboardList className="text-red-500" />,
+      icon: <FaShoppingCart className="text-red-500" />,
       description: 'New order #1832412',
       date: '21 DEC 11 PM',
     },
@@ -46,7 +46,7 @@ const OrdersOverview = () => {
       <h3 className="text-xl font-semibold mb-2">Orders overview</h3>
       <p className="text-sm text-gray-500 mb-4">24% this month</p>
       <ul className="relative z-9 space-y-6">
-        <div className='line'></div>
+        <div className="line" ></div>
         {orders.map((order) => (
           <li key={order.id} className="flex items-start">
             <div className="mr-4">
