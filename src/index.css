@@ -1,0 +1,77 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: .5rem;
+  background-color:#F8F9FA;
+}
+
+.gradient-background {
+  background: linear-gradient(135deg, #f01569, #9c65fa);
+}
+
+.glass-effect {
+  background: rgba(2, 24, 65, 0.493); /* White with some transparencyuppercase */
+  backdrop-filter: blur(1px); /* Blur effect */
+  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  border-radius: 10px;
+  color: #fff; /* Text color */
+  border: none; /* Ensure no border */
+  box-shadow: none; /* Ensure no shadow that might look like a border */
+  outline: none; /* Ensure no outline */
+}
+
+.line::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  width: 2px;
+  background: rgb(199, 186, 186);
+  height: 90%;
+  z-index: -1; /* Ensure the line is behind the list items */
+}
+
+ul.relative.z-9 {
+  position: relative;
+  z-index: 1; /* Ensure the list items are in front of the line */
+}
+
+/* Add this to your global CSS file or in a <style> tag */
+body {
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.transition-all {
+  transition: all 0.3s;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ml-64 {
+  margin-left: 16rem; /* 64px */
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .md\:ml-64 {
+    margin-left: 16rem; /* 64px */
+  }
+}
