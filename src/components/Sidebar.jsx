@@ -31,7 +31,7 @@ const Sidebar = ({ isOpen }) => {
 
   return (
     <div
-      className={`w-64 h-[97%] text-black fixed top-0 left-0 m-4 transition-transform transform pl-4 bg-white shadow-2xl rounded-xl ${
+      className={`w-64 h-[97%] text-black fixed top-0 left-0 m-4 transition-transform transform pl-4 bg-white shadow-2xl rounded-xl overflow-y-auto ${
         isOpen ? "translate-x-0" : "-translate-x-[calc(100%+15px)]"
       } lg:translate-x-0 z-50`}
     >

@@ -6,7 +6,7 @@
 html, body, #root {
   height: 100%;
   margin: 0;
-  padding: .5rem;
+  padding: .2rem;
   background-color:#F8F9FA;
 }
 
@@ -15,14 +15,14 @@ html, body, #root {
 }
 
 .glass-effect {
-  background: rgba(2, 24, 65, 0.493); /* White with some transparencyuppercase */
-  backdrop-filter: blur(1px); /* Blur effect */
-  -webkit-backdrop-filter: blur(10px); /* For Safari */
+  background: rgba(2, 24, 65, 0.493); 
+  backdrop-filter: blur(1px); 
+  -webkit-backdrop-filter: blur(10px); 
   border-radius: 10px;
-  color: #fff; /* Text color */
-  border: none; /* Ensure no border */
-  box-shadow: none; /* Ensure no shadow that might look like a border */
-  outline: none; /* Ensure no outline */
+  color: #fff;
+  border: none; 
+  box-shadow: none; 
+  outline: none; 
 }
 
 .line::before {
@@ -31,17 +31,15 @@ html, body, #root {
   top: 8px;
   left: 16px;
   width: 2px;
-  background: rgb(199, 186, 186);
   height: 90%;
-  z-index: -1; /* Ensure the line is behind the list items */
+  z-index: -1;
 }
 
 ul.relative.z-9 {
   position: relative;
-  z-index: 1; /* Ensure the list items are in front of the line */
+  z-index: 1; 
 }
 
-/* Add this to your global CSS file or in a <style> tag */
 body {
   overflow-x: hidden;
 }
