@@ -15,7 +15,7 @@ const App = () => {
       <Sidebar isOpen={isSidebarOpen} />
       <div className="flex relative flex-col lg:ml-64 min-h-screen">
         <Navbar toggleSidebar={toggleSidebar} />
-        <div className="flex-1 p-4">
+        <div className="flex-1 p-2">
           <Dashboard />
         </div>
       </div>

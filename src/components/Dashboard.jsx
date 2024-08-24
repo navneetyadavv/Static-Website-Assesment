@@ -43,8 +43,7 @@ const stats = [
 
 const Dashboard = () => {
   return (
-    <div className="w-full ml-64 p-6 top-32 right-0 absolute">
-      <h2 className="text-2xl font-bold mb-4">Welcome to the Dashboard</h2>
+    <div className="w-full ml-64 py-6 top-32 right-0 absolute">
       <div className="grid sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-12 gap-2">
         {stats.map((stat, index) => (
           <InfoCard
