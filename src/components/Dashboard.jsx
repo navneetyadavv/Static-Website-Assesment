@@ -9,6 +9,8 @@ import { FaEarthAmericas } from "react-icons/fa6";
 import { BsAwardFill } from "react-icons/bs";
 import SalesOverviewChart from "./SalesOverviewChart";
 import InfoCard from "./InfoCard";
+import ivancik from "../../public/ivancik.jpg";
+import wave from "../../public/wave.svg";
 
 const stats = [
   {
@@ -75,7 +77,9 @@ const Dashboard = () => {
               </p>
             </div>
             <div className="relative w-full md:h-full sm:h-full flex justify-center items-center gradient-background rounded-xl">
-              <div className="absolute top-0 left-0 w-full h-full bg-wave-image bg-cover bg-center"></div>
+              <div className="absolute top-0 left-0 w-full h-full  bg-cover bg-center"
+              style={{ backgroundImage: `url(${wave})` }}
+              ></div>
               <img
                 className="object-cover object-top w-full h-full rounded-xl"
                 src={rocket}
@@ -85,8 +89,11 @@ const Dashboard = () => {
           </div>
         </div>
         <div className="relative p-6 overflow-hidden xl:col-span-5 lg:col-span-1 shadow-md rounded-xl">
-          <div className="absolute inset-0 p-5 w-full rounded-xl">
-            <div className="w-full h-full bg-cover bg-end bg-custom-image rounded-xl"></div>
+          <div className="absolute inset-0 p-5 w-full overflow-hidden rounded-xl">
+            <div
+              className="w-full h-full bg-cover bg-end rounded-xl"
+              style={{ backgroundImage: `url(${ivancik})` }}
+            ></div>
           </div>
           <div className="relative flex flex-col items-start justify-evenly glass-effect rounded-xl p-6 h-full">
             <p className="font-extrabold text-2xl pb-6">

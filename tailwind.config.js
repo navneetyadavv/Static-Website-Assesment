@@ -4,11 +4,6 @@ export default {
 
   theme: {
     extend: {
-      backgroundImage: {
-        "custom-image": "url('./public/ivancik.jpg')",
-        "curve-image" : "url(./public/curve.jpg)",
-        "wave-image" : "url(./public//wave.svg)",
-      },
     },
   },
   variants: {},
